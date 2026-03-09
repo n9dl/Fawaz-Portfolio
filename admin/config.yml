@@ -1,0 +1,245 @@
+backend:
+  name: git-gateway
+  branch: main # تأكد إن هذا اسم البرانش في قتهب
+
+media_folder: "img"
+public_folder: "img"
+
+collections:
+  - name: "pages"
+    label: "إدارة الصفحات"
+    files:
+      - label: "الصفحة الرئيسية (الواجهة)"
+        name: "home"
+        file: "data/home.json"
+        format: "json"
+        fields:
+          # --- الإعدادات العامة ---
+          - {
+              label: "اسم الموقع (في المتصفح)",
+              name: "site_title",
+              widget: "string",
+              default: "Portfolio",
+            }
+          - {
+              label: "الشعار (نص)",
+              name: "header_logo",
+              widget: "string",
+              default: "الشعار هنا",
+            }
+
+          # --- القائمة العلوية ---
+          - {
+              label: "رابط القائمة: الرئيسية",
+              name: "nav_home",
+              widget: "string",
+              default: "الرئيسية",
+            }
+          - {
+              label: "رابط القائمة: من أنا",
+              name: "nav_about",
+              widget: "string",
+              default: "من أنا؟",
+            }
+          - {
+              label: "رابط القائمة: المعرض",
+              name: "nav_gallery",
+              widget: "string",
+              default: "معرض الأعمال",
+            }
+          - {
+              label: "رابط القائمة: تواصل",
+              name: "nav_contact",
+              widget: "string",
+              default: "تواصل معي",
+            }
+
+          # --- قسم الهيرو ---
+          - {
+              label: "عنوان الهيرو",
+              name: "hero_title",
+              widget: "string",
+              default: "عنوان",
+            }
+          - {
+              label: "وصف الهيرو",
+              name: "hero_desc",
+              widget: "text",
+              default: "الوصف",
+            }
+          - {
+              label: "نص زر الهيرو",
+              name: "hero_button_text",
+              widget: "string",
+              default: "الأعمال",
+            }
+          - {
+              label: "صورة الهيرو الرئيسية",
+              name: "hero_img_main",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "صورة الهيرو السفلية 1",
+              name: "hero_img_bot1",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "صورة الهيرو السفلية 2",
+              name: "hero_img_bot2",
+              widget: "image",
+              required: false,
+            }
+
+          # --- قسم من أنا ---
+          - {
+              label: "عنوان قسم من أنا",
+              name: "about_section_title",
+              widget: "string",
+              default: "من أنا؟",
+            }
+          - {
+              label: "اسم المصور",
+              name: "about_name",
+              widget: "string",
+              default: "الاسم",
+            }
+          - {
+              label: "وصف الخدمة",
+              name: "about_desc",
+              widget: "text",
+              default: "وصف الخدمه هنا",
+            }
+
+          # --- قسم المعرض ---
+          - {
+              label: "عنوان قسم المعرض",
+              name: "gallery_section_title",
+              widget: "string",
+              default: "معرض الأعمال",
+            }
+          - {
+              label: "صورة المعرض 1",
+              name: "gallery_img_1",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "صورة المعرض 2",
+              name: "gallery_img_2",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "صورة المعرض 3",
+              name: "gallery_img_3",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "صورة المعرض 4",
+              name: "gallery_img_4",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "صورة المعرض 5",
+              name: "gallery_img_5",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "صورة المعرض 6",
+              name: "gallery_img_6",
+              widget: "image",
+              required: false,
+            }
+          - {
+              label: "صورة المعرض 7",
+              name: "gallery_img_7",
+              widget: "image",
+              required: false,
+            }
+
+          # --- قسم التواصل ---
+          - {
+              label: "عنوان قسم التواصل",
+              name: "contact_section_title",
+              widget: "string",
+              default: "تواصل معي",
+            }
+          - {
+              label: "رابط الواتساب",
+              name: "contact_whatsapp_link",
+              widget: "string",
+              default: "https://wa.me/966583881451",
+            }
+          - {
+              label: "رابط سناب شات",
+              name: "contact_snapchat_link",
+              widget: "string",
+              default: "https://snapchat.com/t/3VLR9FYw",
+            }
+          - {
+              label: "رابط تيك توك",
+              name: "contact_tiktok_link",
+              widget: "string",
+              default: "https://www.tiktok.com/@lkkkkk429?_r=1&_t=ZS-94WqlQrZTSK",
+            }
+
+          # --- الفوتر ---
+          - {
+              label: "شعار الفوتر",
+              name: "footer_logo",
+              widget: "string",
+              default: "الشعار هنا",
+            }
+          - {
+              label: "وصف الفوتر",
+              name: "footer_desc",
+              widget: "text",
+              default: "وصف صغير يعبر عن الهوية هنا.",
+            }
+          - {
+              label: "عنوان روابط الفوتر",
+              name: "footer_links_title",
+              widget: "string",
+              default: "روابط سريعة",
+            }
+          - {
+              label: "رابط الفوتر: الرئيسية",
+              name: "footer_nav_home",
+              widget: "string",
+              default: "الرئيسية",
+            }
+          - {
+              label: "رابط الفوتر: من أنا",
+              name: "footer_nav_about",
+              widget: "string",
+              default: "من أنا؟",
+            }
+          - {
+              label: "عنوان تواصل الفوتر",
+              name: "footer_contact_title",
+              widget: "string",
+              default: "تواصل",
+            }
+          - {
+              label: "نص الفوتر: واتساب",
+              name: "footer_whatsapp_text",
+              widget: "string",
+              default: "واتساب",
+            }
+          - {
+              label: "نص الفوتر: تيك توك",
+              name: "footer_tiktok_text",
+              widget: "string",
+              default: "تيك توك",
+            }
+          - {
+              label: "حقوق النشر",
+              name: "footer_copyright",
+              widget: "string",
+              default: "جميع الحقوق محفوظة © 2026 | اسمك",
+            }
